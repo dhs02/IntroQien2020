@@ -2,6 +2,7 @@ class Attractie {
 	String naam;
 	double omzet;
 	int aantalKaartjes;
+	int aantalRondes;
 	
 	double prijs;
 	double oppervlakte;
@@ -9,6 +10,7 @@ class Attractie {
 	void draaien() {
 		System.out.println("De attractie " + "\"" + naam + "\"" + " draait.\n");
 		omzet += prijs;
+		aantalRondes++;
 		aantalKaartjes++;
 		Kassa.totaleOmzet += prijs;
 		Kassa.totaleKaartjes++;

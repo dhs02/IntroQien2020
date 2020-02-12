@@ -29,13 +29,14 @@ public class Main {
 		
 		while (true) {
 			System.out.println("Toets 1 voor \"Botsauto\", 2 voor \"Spin\", 3 voor \"Spiegelpaleis\", 4 voor \"Spookhuis\", 5 voor \"Hawaii\" of 6 voor \"Ladderklimmen\". ");
-			System.out.print("Toets \"o\" voor de omzet, \"k\" voor het aantal verkochte kaartjes of \"b\" voor de Belastinginspecteur. ");
+			System.out.print("Toets \"o\" voor de omzet, \"k\" voor het aantal verkochte kaartjes of \"b\" voor de Belastinginspecteur. \n");
 			input = sc.next().charAt(0);
 			switch (input) {
 			case '1':
 				botsauto.draaien();
 				break;
 			case '2':
+				spin.opstellingsKeuring();
 				spin.draaien();
 				break;
 			case '3':
@@ -45,6 +46,7 @@ public class Main {
 				spookhuis.draaien();
 				break;
 			case '5':
+				hawaii.opstellingsKeuring();
 				hawaii.draaien();
 				break;
 			case '6': 

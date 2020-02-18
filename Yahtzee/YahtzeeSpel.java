@@ -42,6 +42,9 @@ public class YahtzeeSpel {
 				}
 			} else if (input.equals("q")) {
 				break;
+			} else {
+				System.out.println("Onjuiste invoer, probeer het opnieuw.\n");
+				continue;
 			}
 			// De huidige speler heeft weer 3 pogingen nadat de volgende speler klaar is met gooien.
 			currentPlayer.setTurnsLeft(3);
